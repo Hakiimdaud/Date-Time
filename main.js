@@ -35,7 +35,9 @@ function clock() {
 
     dateTime.getHours() > 12 ? AmPm.innerHTML= "Pm" : AmPm.innerHTML= "Am"
 
+    hour.innerHTML = dateTime.getHours() % 12 + " :"
 
+    dateTime.getHours()%12 < 10 ? hour.innerHTML= `0${dateTime.getHours() %12} :` : hour.innerHTML= dateTime.getHours() + " :"
 }
 
 
